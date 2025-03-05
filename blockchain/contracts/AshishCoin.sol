@@ -23,14 +23,14 @@ contract AshishCoin is ERC20, Ownable {
         );
 
         _nextMint[msg.sender] = block.timestamp + _mintDelay;
-        transfer(msg.sender, _mintAmount);
+        _mint(msg.sender, _mintAmount);
     }
 
-    function setMintAmount(uint256 _newMintAmount) private onlyOwner {
+    function setMintAmount(uint256 _newMintAmount) public onlyOwner {
         _mintAmount = _newMintAmount;
     }
 
-    function setMintDelay(uint64 _newMintDelay) private onlyOwner {
+    function setMintDelay(uint64 _newMintDelay) public onlyOwner {
         _mintDelay = _newMintDelay;
     }
 }

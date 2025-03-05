@@ -25,5 +25,7 @@ export default tseslint.config({
         endOfLine: 'auto',
       },
     ],
+    'no-unused-expressions': 'off',
+    '@typescript-eslint/no-unused-expressions': 'off',
   },
 })
