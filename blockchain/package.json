@@ -5,7 +5,7 @@
   "scripts": {
     "test": "npx hardhat test --network hardhat",
     "deploy:test": "npx hardhat ignition deploy ./ignition/modules/AshishCoin.ts --network local",
-    "deploy:sepolia": "npx hardhat ignition deploy ./ignition/modules/AshishCoin.ts --network sepolia"
+    "deploy:sepolia": "npx hardhat ignition deploy ./ignition/modules/AshishCoin.ts --network sepolia --verify"
   },
   "keywords": [],
   "author": "",
